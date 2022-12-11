@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  font-family: monospace;
+}
+
+/* HEADER */
+
+.inicio {
+  background-image: url("/src/assets/fundo.jpg");
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+h1 {
+  color: #afaeae;
+  border: solid 1px #afaeae;
+  font-size: 60px;
+  border-inline-end-style: none;
+  border-inline-start-style: none;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  margin: 20px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: larger;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: rgb(32, 73, 22);
+  text-decoration: line-through;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 20px;
+  text-combine-upright: all;
+  justify-content: center;
+}
+
+footer ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer li a,
+i {
+  text-align: center;
+  display: flex;
+  width: 20vh;
+}
+
+footer h4 {
+  color: black;
+  border: solid 1px black;
+  border-inline-end-style: none;
+  border-inline-start-style: none;
+}
+
+/* INDEX */
+
+#imagensIniciais {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagensIniciais {
+  background-size: cover;
+  padding: 80px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#product {
+  background-image: url("/src/assets/monsteradeliciosa.jpg");
+}
+
+#inspiration {
+  background-image: url("/src/assets/cactosblog.jpg");
+  background-position: center;
+}
+
+#inspiration h1,
+#product h1 {
+  color: #afaeae;
+  border: none;
+  font-size: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.entrega {
+  background-color: #c1ddc4;
+  display: flex;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  width: auto;
+  height: 60px;
+  align-items: flex-end;
+}
+
+/* SOBRE */
+
+.polaroid {
+  width: 20%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.galeriaGrow {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.container-foto {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+/* CONTATO */
+
+.form {
+  padding: 20px;
+  border: #afaeae solid 1px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("/src/assets/fundoform.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+input {
+  margin: 5px;
+  border: #afaeae solid 1px;
+}
+
+textarea {
+  border: #afaeae solid 1px;
+  padding: 10px;
+  width: 95%;
+}
+
+button {
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  /* EFEITOS DE BOTÃO: */
+
+  button:focus,
+  button:hover {
+    color: rgb(32, 73, 22);
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(32, 73, 22);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+/* PRODUTOS */
+
+.produtos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+  .produto {
+    position: relative;
+    width: 20%;
+    margin: 10px;
+  }
+ figcaption {
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(32, 73, 22);
+    color: #afaeae;
+ }
+
+ /* CADASTRO */
+
+.gerenciamento{
+  text-align: center;
+}
+
+thead, tbody{
+  text-align: center;
+}
+
+td i{
+  width: 40px;
+}
+i{
+  cursor: pointer;
+}
